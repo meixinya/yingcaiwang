@@ -1,0 +1,17 @@
+    url = scrapy.Field()
+    pname = scrapy.Field()  //div[@class="base_info"]//span[@class="job_name"]/text()
+    money = scrapy.Field() //div[@class="job_require"]//span[@class="job_price"]/text()
+
+    location = scrapy.Field()   #工作大致地点 //div[@class="job_require"]//span[@class="job_loc"]/text()
+    year = scrapy.Field()   //div[@class="job_require"]//span[@class="job_exp"]/text()
+
+    degree = scrapy.Field() //div[@class="job_require"]//span[4]/text()
+    ptype = scrapy.Field()  //div[@class="job_require"]//span[3]/text()
+    tags = scrapy.Field()   //div[@class="job_intro_tag"]/span/text()
+    date_pub = scrapy.Field()   //div[@class="job_profile jpadding"]/p/text()
+    advantage = scrapy.Field()  //div[@class="job_fit_tags"]//li/text()
+    jobdesc = scrapy.Field()    //div[@class="job_intro_info"]/text()
+    jobaddr = scrapy.Field()  #工作地址
+    company = scrapy.Field()    #公司名    //div[@class="job-detail-l"]//h4/a/text()
+    crawl_time = scrapy.Field()
+    num = scrapy.Field()
